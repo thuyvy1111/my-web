@@ -12,6 +12,371 @@
         <a href="about.html">About</a> |
         <a href="labs.html">Labs</a>
     </nav>
-    <p>Content for Lab 2.</p>
+    <p><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            box-shadow: 0 0 5px #ccc;   
+            flex-wrap: wrap;
+        }
+        .welcome {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .welcome img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .welcome .text {
+            flex-grow: 1;
+        }
+        .welcome h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .welcome p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #666;
+        }
+        .body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ccc;
+            margin: 20px; 
+            padding: 20px;
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+        .body-right {
+            display: flex;
+            align-items: center; 
+        }
+        .body-right img {
+            width: 80px;
+            margin-right: 10px;
+        }
+        .body-right-2 {
+            display: flex;
+            align-items: center;
+            margin-left: 20px; 
+        }
+        .pick-up {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            margin: 20px;
+        }
+        .menu-pickup {
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid #838282c6;
+            margin: 0px 40px;
+            list-style: none;
+            padding: 10px 0;
+        }
+        .menu-pickup li {
+            cursor: pointer;
+        }
+        .menu-pickup li:hover {
+            border-bottom: 1px solid #000000;
+            font-family: sans-serif;
+        }
+        .choice-lesson {
+            padding: 10px 40px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .lesson {
+            width: calc(33.33% - 20px);
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .img-lesson {
+            width: 40%;
+        }
+        .img-lesson img {
+            width: 100%;   
+            border-radius: 8px;
+        }
+        .text-lesson {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 10px;
+        }
+        .lecture {
+            font-size: 12px;
+            opacity: 0.6;
+        }
+        .header-page2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 40px;
+            margin: 20px;
+        }
+        .body-page2 {
+            width: calc(100% - 80px);
+            padding: 10px 40px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .sbj {
+            width: calc(25% - 30px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        .img-page2 {
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+        .img-page2 img {
+            width: 100%;
+            height: auto;
+        }
+        .text-sbj p {
+            font-size: 12px;
+            color: #868686;
+            margin: 5px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .text-sbj h4 {
+            margin: 5px 0;   
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-align: center;
+        }
+        .report {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .report h4 {
+            margin: 0;
+            color: #868686;
+        }
+        .footer-page2 {
+            width: calc(100% - 160px);
+            margin: 10px 40px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            border: 1px dashed #ccc;
+            padding: 40px;
+        }
+        .footer-page2 button {
+            background: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .footer-page2 button:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Business Operations</a>
+        <a href="#">Cloud Computing</a>
+        <a href="#">Cybersecurity</a>
+        <a href="#">Data Science</a>
+        <a href="#">Development</a>
+        <a href="#">IT Operations</a>
+        <a href="#">Language Learning</a>
+        <a href="#">Leadership & Management</a>
+        <a href="#">Marketing</a>   
+    </nav>
+
+    <div class="welcome">
+        <img src="images/avatar.jpg" alt="">
+        <div class="text">
+            <h2>Welcome back, Nguyen Thuy Vy</h2>
+            <p>Add occupation and interests</p>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="text-body">
+            <h2>Weekly streak</h2>
+            <p>One ring down, one to go. Keep it up!</p>
+        </div>
+        <div class="body-right">
+            <img src="/img/streak.png" alt="">
+            <div>
+                <p>2 Weeks</p>
+                <p>Current streak</p>                    
+            </div>
+            <div class="body-right-2">
+                <div class="img-circle">
+                    <img src="/img/circle.png" alt="">
+                </div>
+                <div class="right-text">
+                    <p>11/30 course min</p>
+                    <p>4/1 visit</p>
+                    <p>Oct 13 - 19</p>
+                    <a href="#"><strong><u>See all activity</u></strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pick-up">
+        <h1>Pick up when you left off</h1>
+        <a href="#"><strong><u>My learning</u></strong></a>
+    </div>
+
+    <div class="menu-pickup"> 
+        <li>Courses</li>
+        <li>Learning paths</li>
+        <li>Certification preparation</li>
+    </div>
+
+    <div class="choice-lesson">
+        <div class="lesson">
+            <div class="img-lesson">
+                <img src="img/hinh1.png" alt="">
+            </div>
+            <div class="text-lesson">
+                <p>FPT_ISMS Refresh Training S2 2024</p>
+                <h1>1. Introduction</h1>
+                <div class="lecture">
+                    <span>"Lecture" <sup>.</sup></span> "1m"
+                </div>
+            </div>
+        </div>
+        <div class="lesson">
+            <div class="img-lesson">
+                <img src="img/hinh2.png" alt="">
+            </div>
+            <div class="text-lesson">
+                <p>MuleSoft 4.X Complete Guide For Beginners - Hands-On Project</p>
+                <h1>2. Integration introduction</h1>
+                <div class="lecture">
+                    <span>"Lecture" <sup>.</sup></span> "6m left"
+                </div>
+            </div>
+        </div>
+        <div class="lesson">
+            <div class="img-lesson">
+                <img src="img/hinh3.png" alt="">
+            </div>
+            <div class="text-lesson">
+                <p>English Vocabulary</p>
+                <h1>7. Quiz and Questions</h1>
+                <div class="lecture">
+                    <span>"Quiz" <sup>.</sup></span> "9 questions"
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-page2">
+        <h1>Based on your certification interests, we recommend</h1>
+        <a href="#"><strong><u>Edit certification</u></strong></a>
+    </div>
+
+    <div class="body-page2">
+        <div class="sbj">
+            <div class="img-page2">
+                <img src="img/one.png" alt="">
+            </div>
+            <div class="text-sbj">
+                <h4>Oracle Certified Associate Java Programmer (OCAJP) 1Z0-808</h4>
+                <p>Andrii Piatakha, Learn IT University</p>
+            </div>
+            <div class="report">
+                <h4>4.6</h4>
+            </div>
+        </div>
+
+        <div class="sbj">
+            <div class="img-page2">
+                <img src="img/two.png" alt="">
+            </div>
+            <div class="text-sbj">
+                <h4>Oracle Java Certification - Pass the Associate 1Z0-808 Exam</h4>
+                <p>Tim Buchalka's Learning Programming Academy</p>
+            </div>
+            <div class="report">
+                <h4>4.6</h4>
+            </div>
+        </div>
+
+        <div class="sbj">
+            <div class="img-page2">
+                <img src="img/three.png" alt="">
+            </div>
+            <div class="text-sbj">
+                <h4>Complete Java SE 8 Developer Bootcamp - OCA Prep Included</h4>
+                <p>AIntertech Training, Jeff Jensen</p>
+            </div>
+            <div class="report">
+                <h4>4.6</h4>
+            </div>
+        </div>
+
+        <div class="sbj">
+            <div class="img-page2">
+                <img src="img/four.png" alt="">
+            </div>
+            <div class="text-sbj">
+                <h4>Spring Professional Certification Exam Tutorial - Module 02</h4>
+                <p>Dominik Cebula</p>
+            </div>
+            <div class="report">
+                <h4>4.6</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-page2">
+        <h3>Personalize your learning experience</h3>
+        <p>Add your occupation and interests to get better content recommendations</p>
+        <button>Add occupation and interests</button>
+    </div>
+</body>
+</html></p>
 </body>
 </html>
