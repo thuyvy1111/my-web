@@ -6,11 +6,56 @@
     <title>About</title>
 </head>
 <body>
-    <h1>About Me</h1>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="labs.html">Labs</a>
-    </nav>
+    body {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .welcome{
+            font-size: 24px;
+        }
+        .nav-menu{
+            display: flex;
+            align-items: center;
+        }
+        .img-logo img{
+            width: 50px;
+            height: auto;
+        }
+        .menu a {
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0,3s;
+            margin: 10px;
+            color:white;
+        }
+        .menu a:hover{
+            color: #FFD700
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="welcome">Welcome to My Website</div>
+        <div class="nav-menu">
+            <div class="img-logo">
+                <img src="./img/nonglam.svg" alt>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a> 
+                <a href="labs.html">Labs</a>
+            </div>
+        </div>
+    </header>
     <p>This is my personal page. You can check out my <a href="cv.html">CV here</a>.</p>
 </body>
 </html>
