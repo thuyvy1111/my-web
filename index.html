@@ -4,14 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <stylee>
+         body {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .welcome{
+            font-size: 24px;
+        }
+        .nav-menu{
+            display: flex;
+            align-items: center;
+        }
+        .img-logo img{
+            width: 50px;
+            height: auto;
+        }
+        .menu a {
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+            margin: 10px;
+            color:white;
+        }
+        .menu a:hover{
+            color: #FFD700
+        }
+
+        .login-container{
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+            margin: 80px auto;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="password"] {
+        width: 100%;             
+        padding: 10px;         
+        margin: 10px 0;         
+        border: 1px solid #000000; 
+        border-radius: 5px;     
+        box-sizing: border-box; 
+}
+        button {    
+        background-color: #4CAF50; 
+        color: white;              
+        padding: 10px;             
+        border: none;            
+        border-radius: 5px;      
+        cursor: pointer;          
+        width: 100%;               
+}
+        button:hover {
+        background-color: #45a049; 
+}
+        .footer {
+        margin-top: 20px;       
+        font-size: 12px;         
+    }
+    </stylee>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="labs.html">Labs</a>
-    </nav>
-    <p>This is the homepage.</p>
+     <header>
+        <div class="welcome">Welcome to My Website</div>
+        <div class="nav-menu">
+            <div class="img-logo">
+                <img src="./img/nonglam.svg" alt>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a> 
+                <a href="labs.html">Labs</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="login-container"> 
+        <h2>Đăng nhập</h2>
+        <form action="dashboard.html" method="get">
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng nhập</button>
+        </form>
+        <div class="footer">
+            <p><a href="#">Quên mật khẩu?</a></p>
+            <p><a href="#">Đăng ký tài khoảng mới</a></p>
+        </div>
+    </div>
 </body>
 </html>
